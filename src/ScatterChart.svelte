@@ -2,10 +2,10 @@
   import { onMount } from 'svelte';
   import Highcharts from 'highcharts';
 
-  let chart;
+  let chartContainer;  // This will be a DOM reference
 
   onMount(() => {
-    chart = Highcharts.chart('scatterContainer', {  // ID as a string
+    Highcharts.chart(chartContainer, {  // Use the DOM reference directly
       chart: {
         type: 'scatter',
         zoomType: 'xy'
@@ -37,5 +37,5 @@
   });
 </script>
 
-<!-- ID must match exactly what you referenced in the chart function -->
-<div id="scatterContainer" style="width: 100%; height: 400px;"></div>
+<!-- No ID used. Just bind the div to the variable -->
+<div bind:this={chartContainer} style="width: 100%; height: 400px;"></div>

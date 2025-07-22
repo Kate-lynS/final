@@ -4,7 +4,7 @@
   import ScatterChart from './ScatterChart.svelte';
 </script>
 
-<TitleCard {title} {subtitle} />
+
 
 <ScatterChart />
 <p>

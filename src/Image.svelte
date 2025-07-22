@@ -1,7 +1,6 @@
 <script>
     import { fade, fly } from "svelte/transition";
-    import { Scroller } from "svelte-scroller";
-    
+    import Scroller from "./lib/Scroller.svelte";
 
     let duckIsVisible = $state(false);
 
@@ -51,7 +50,7 @@
 </script>
 
 <div>
-    <Scroller layout="left">
+    <Scroller layout="left" scrolly={true}>
         {#snippet sticky()}
             <div>
                 {#if duckIsVisible}

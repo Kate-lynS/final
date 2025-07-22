@@ -5,7 +5,7 @@
   let chart;
 
   onMount(() => {
-    chart = Highcharts.chart('scatter-container', {
+    chart = Highcharts.chart('scatterContainer', {  // ID as a string
       chart: {
         type: 'scatter',
         zoomType: 'xy'
@@ -37,4 +37,5 @@
   });
 </script>
 
-<div id="scatter-container" style="width: 100%; height: 400px;"></div>
+<!-- ID must match exactly what you referenced in the chart function -->
+<div id="scatterContainer" style="width: 100%; height: 400px;"></div>

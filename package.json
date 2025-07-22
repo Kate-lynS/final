@@ -15,5 +15,8 @@
     "svelte": "^5.28.1",
     "vite": "^6.3.5"
   },
-  "homepage": "https://github.com/Kate-lynS/final.git"
+  "homepage": "https://github.com/Kate-lynS/final.git",
+  "dependencies": {
+    "highcharts": "^12.3.0"
+  }
 }
